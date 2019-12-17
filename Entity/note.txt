@@ -1,0 +1,13 @@
+$ git config --global user.name "XXX"
+$ git config --global user.email "XXX@hotmail.com"
+$ chmod 600 ~/.ssh/id_rsa
+cd team05
+$ git checkout -b issue-00 master
+$ notepad README.md
+$ git add README.md
+$ git commit -m "add name and student no B6002671 - close #00"
+$ git checkout master
+$ git remote update
+$ git rebase origin/master
+$ git merge issue-00 --no-ff
+git push origin master
